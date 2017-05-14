@@ -9,7 +9,7 @@ package quest_1;
  *
  * @author m-sev
  */
-abstract class Mashine implements Run {
+abstract class Mashine implements Run, Comparable<Mashine> {
     final int maxSpeed = 160;
     final int minSpeed = 0;
     final int minPassQuantity = 0;
@@ -26,5 +26,20 @@ abstract class Mashine implements Run {
     @Override
     public void showName(){
         System.out.println("Transport Name:" + this.carName);
+    }
+    
+    public int getCurrentSpeed(){
+        return currentSpeed;
+    }
+    
+    @Override
+    public String getCarName(){
+        return carName;
+    }
+    
+    @Override
+    public int compareTo(Mashine comMashine){
+        int comSpeed = ((Mashine) comMashine).getCurrentSpeed();
+        return this.currentSpeed - comSpeed;
     }
 }

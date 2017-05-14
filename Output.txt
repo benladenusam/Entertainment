@@ -1,0 +1,4 @@
+Pacman:    12
+Mountain:    50
+Omega:    14000
+Alpha:    27000

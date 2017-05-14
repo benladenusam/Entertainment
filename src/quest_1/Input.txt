@@ -1,0 +1,2 @@
+1:Alpha, 27000, Satellite, 22, 0, 5
+2:"Mountain", 50, "Common", 2, 1, 2

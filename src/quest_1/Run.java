@@ -15,4 +15,5 @@ public interface Run {
     int getMass();
     int getPassQuantity();
     int getMeansTransmissionMovementQuantity();
+    String getCarName();
 }
